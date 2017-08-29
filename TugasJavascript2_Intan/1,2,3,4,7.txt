@@ -1,0 +1,138 @@
+
+//================1======================
+1. pada algoritma pertama jika traffic_light menyala 
+-> masuk lagi ke kondisi jika lampu merah maka berhenti selain itu jalan
+
+namun bila algoritma kedua setelah dicek jika traffic_light menyala 
+-> masuk kondisi jika lampu merah yang menyala maka berhenti jika tidak keluar kondisi pertama dan masuk else, 
+berarti selain traffic_light menyala maka jalan
+
+perbedaanya adalah : jika algoritma pertama "jalan" jika traffic_light menyala dan lampu tidak merah
+tapi: algoritma kedua "jalan" jika traffic_light tidak menyala 
+
+algoritma yang lebih memuaskan menurut saya adalah algoritma pertama karena "jalan" jika traffic_light menyala dan bukan lampu merah, 
+berarti bisa jalan jika hijau atau kuning,
+
+//================2===========================
+2. Algoritma tersebut gagal ketika keadaan setelah membagi permen pada anak pertama atau anak kedua, sehingga anak ketiga tidak mendapatkan karena sudah habis
+
+//===============3============================
+3. https://jsfiddle.net/5o5o4dwk/
+var angka1 = prompt("Angka 1 ");
+var angka2 = prompt("Angka 2 ");
+var angka3 = prompt("Angka 3 ");
+var angka = [angka2,angka3,angka1]; 
+for(i=0;i<3;i++){
+	console.log(angka[i]);
+}
+
+--jika dengan function--
+
+function swapAngka(a,b,c){
+	
+	var angka = [b,c,a]; 
+	for(i=0;i<3;i++){
+		console.log(angka[i]);
+	}
+	
+}
+
+//================4==========================
+4. https://jsfiddle.net/gwz9hq2v/
+var kota = prompt("Input kota : ");
+
+var kodepos;
+if(kota.toLowerCase() =="padang"){
+	kodepos="25000";
+}else if(kota.toLowerCase() =="bandung"){
+	kodepos="40100";
+}else if(kota.toLowerCase() =="solo"){
+	kodepos="51000";
+}else if(kota.toLowerCase() =="denpasar"){
+	kodepos="72000";
+}else if(kota.toLowerCase() =="palu"){
+	kodepos="923000";
+}else{
+	alert("Kota tidak ada");
+}
+alert(kodepos);
+
+--jika dengan function--function kodePos(a){
+	var kodepos;
+	if(a.toLowerCase() =="padang"){
+		kodepos="25000";
+	}else if(a.toLowerCase() =="bandung"){
+		kodepos="40100";
+	}else if(a.toLowerCase() =="solo"){
+		kodepos="51000";
+	}else if(a.toLowerCase() =="denpasar"){
+		kodepos="72000";
+	}else if(a.toLowerCase() =="palu"){
+		kodepos="923000";
+	}else{
+		alert("Kota tidak ada");
+	}
+	alert(kodepos);
+}
+
+//=================6=========================
+6.https://jsfiddle.net/uf01wdkg/
+var angka = [5,312,123,-12];
+console.log("Sebelum disorting");
+for(i=0;i<angka.length;i++){
+	console.log(angka[i]);
+}
+
+for(var i=1;i<angka.length;i++){
+	for(var j=angka.length-1;j>=i;j--){
+    if(angka[j]<angka[j-1]){
+			var temp = angka[j];
+      angka[j]=angka[j-1];
+      angka[j-1]=temp
+    }
+  }
+}
+
+console.log("Sesudah disorting");
+for(i=0;i<angka.length;i++){
+	console.log(angka[i]);
+}
+
+
+
+//=================7=========================
+7. https://jsfiddle.net/3fegnnng/
+var hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+console.log(hari.toString());
+var hari1 = prompt("Input hari pertama: ");
+var hari2 = prompt("Input hari kedua: ");
+console.log(hari1);
+console.log(hari2);
+
+var posisihari2=0;
+var selisih =0;
+if((hari.indexOf(hari2)) < (hari.indexOf(hari1))){
+	posisihari2 = (hari.indexOf(hari2)) + 7;
+  selisih = posisihari2 - (hari.indexOf(hari1)) + 1;
+}else{
+	selisih = (hari.indexOf(hari2)) - (hari.indexOf(hari1));
+}
+
+console.log(selisih);
+
+--jika dengan function--function selisihHari(hari1,hari2){
+	var hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+	console.log(hari1);
+	console.log(hari2);
+
+	var posisihari2=0;
+	var selisih =0;
+	if((hari.indexOf(hari2)) < (hari.indexOf(hari1))){
+		posisihari2 = (hari.indexOf(hari2)) + 7;
+	  selisih = posisihari2 - (hari.indexOf(hari1)) + 1;
+	}else{
+		selisih = (hari.indexOf(hari2)) - (hari.indexOf(hari1));
+	}
+
+	console.log(selisih);
+}	

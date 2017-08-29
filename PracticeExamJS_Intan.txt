@@ -1,0 +1,46 @@
+1. b 
+(tidak ada yg benar)
+text-shadows: sumbu-x,sumbu-y, blur/radius, warna
+
+2. throw new error(200,error); 
+(throw new error("200","Invalid"));
+https://www.nczonline.net/blog/2009/03/10/the-art-of-throwing-javascript-errors-part-2/
+
+3. c :)
+
+4. b
+(a)
+
+5. d :)
+
+6. a :)
+
+7. b & c
+(d)
+karena header jadi h1 - h6
+
+8. a :)
+kalau, left : teks di kiri, right: teks di kanan, auto : floating
+https://msdn.microsoft.com/en-us/library/hh673558(v=vs.85).aspx
+
+9. c :)
+
+10. b , d
+(a,c)
+
+11. a :)
+
+12. b -> mengambil value dari txt_name
+(a)
+
+13. a :)
+
+14. c
+(b)
+
+15. a
+(d)
+
+
+
+

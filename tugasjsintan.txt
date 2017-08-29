@@ -1,0 +1,82 @@
+1. https://jsfiddle.net/gLkrm312/
+2. https://jsfiddle.net/8ydgv0bc/
+3. https://jsfiddle.net/zreug4hq/
+4. https://jsfiddle.net/fmk5x6s1/
+5. https://jsfiddle.net/76sodmg5/
+6. https://jsfiddle.net/5oqzdmq8/  
+7. https://jsfiddle.net/auxv37c2/
+
+======1=====
+var celcius = prompt("Input celcius : ");
+var fahrenheit;
+var kelvin = 0; 
+kelvin = parseInt(celcius)+parseFloat(273.15);
+fahreinheit=(9/5*celcius)+32;
+alert("Suhu dalam fahreinheit adalah "+fahreinheit+" Dalam kelvin adalah "+ kelvin);
+
+======2=====
+var alas = prompt("Input Alas ");
+var tinggi = prompt("Input Tinggi ");
+var luas = (alas * tinggi)/2;
+alert("Maka luasnya adalah : "+luas);
+
+======3=====
+var harga = prompt("Input harga barang: ");
+var diskon = harga * 0.05;
+console.log("Diskon dari barang tersebut adalah "+diskon);
+var total = harga-diskon;
+console.log("Harga barang setelah diskon adalah "+total);
+
+======4=====
+var angka=new Array(3);
+for(var i=0;i<3;i++){
+	angka[i] = prompt("Input angka ke "+i);
+}
+angka.sort(function(a,b){return a-b});
+for(var i=0;i<3;i++){
+	console.log(angka[i]);
+}
+
+======5=====
+function romawi(num) {
+  var lookup = {X:10,IX:9,V:5,IV:4,I:1},roman = '',i;
+  for ( i in lookup ) {
+    while ( num >= lookup[i] ) {
+      roman += i;
+      num -= lookup[i];
+    }
+  }
+  return roman;
+}
+var angka = prompt("Inputkan angka ");
+console.log(romawi(angka));
+
+
+======6=====
+var hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+console.log(hari.toString());
+var hari1 = prompt("Input hari pertama: ");
+var hari2 = prompt("Input hari kedua: ");
+console.log(hari1);
+console.log(hari2);
+var posisihari1  = hari.indexOf(hari1); 
+var posisihari2  = hari.indexOf(hari2);
+console.log(posisihari1);
+console.log(posisihari2);
+var selisih = posisihari2-posisihari1;
+console.log(selisih);
+
+
+======7=====
+var umur = prompt("Input umur ");
+if(umur>=0 && umur<=5){
+	console.log("Balita");
+}else if(umur>5 && umur<=12){
+	console.log("Anak-anak");
+}else if(umur>12 && umur<=20){
+	console.log("Remaja");
+}else if(umur>20 && umur<=60){
+	console.log("Dewasa");
+}else if(umur>60){
+	console.log("Tua");
+}

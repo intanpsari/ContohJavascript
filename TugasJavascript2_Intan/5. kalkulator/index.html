@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>N0 5</title>
+	<script src="script.js"></script>
+	<style>
+		input{
+			width: 40%;
+			margin-bottom: 5%;
+			border-radius: 5px;
+		}
+		fieldset{
+			width: 20%;
+			margin-left: 40%;
+		}
+		form{
+			text-align: center;
+		}
+		body{
+			text-align: center;
+		}
+		.button{
+			background-color: #f0f0f0;
+		}
+	</style>
+</head>
+<body>
+	<p>Kalkulator sederhana</p>
+	<form>
+		<fieldset>
+			<input type="text" name="angka1">
+			<input type="text" name="angka2">
+			<input type="button" class="button" name="jumlah" value="jumlah" onclick="jumlahAngka((form.angka1.value),(form.angka2.value))">
+			<input type="button" class="button" name="jumlah" value="kurang" onclick="kurangAngka((form.angka1.value),(form.angka2.value))">
+			<input type="button" class="button" name="jumlah" value="kali" onclick="kaliAngka((form.angka1.value),(form.angka2.value))">
+			<input type="button" class="button" name="jumlah" value="bagi" onclick="bagiAngka((form.angka1.value),(form.angka2.value))">
+		</fieldset>
+	</form>
+	
+</body>
+</html>

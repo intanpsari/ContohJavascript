@@ -1,0 +1,8 @@
+TUGAS !!!!
+Mengandung
+1. Loop (user masukkin input sampai suatu keadaan)
+2. try catch
+3. collection (Array, List, HashSet, atau Dictionaries)
+4. Object lain (Example: Bird)
+5. Operasi aritmatika (tambah, kurang, kali, bagi)
+6. LINQ
